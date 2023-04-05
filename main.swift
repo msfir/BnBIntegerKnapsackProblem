@@ -132,7 +132,7 @@ var items = Array<Item>()
 for i in 1...n {
     print("===== Item ke-\(i) =====")
     print("Nama: ", terminator: "")
-    let name = readLine() ?? ""
+    let name = readLine() ?? "item\(i)"
     let weight = getIntegerInput("Berat: ")
     let profit = getIntegerInput("Profit: ")
     items.append(Item(name: name, weight: weight, profit: profit))
